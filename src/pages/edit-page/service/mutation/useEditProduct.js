@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { request } from "../../../../config/request";
 
-export const useEditTodo = (id) => {
+export const useEditProduct = (id) => {
   const client = useQueryClient();
   return useMutation({
     mutationFn: (data) =>

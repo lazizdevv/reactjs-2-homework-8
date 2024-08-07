@@ -7,7 +7,7 @@ export const useDeleteData = (id) => {
     mutationFn: (data) =>
       request.delete(`/todos/${id}`, data).then((res) => res.data),
     onSuccess: () => {
-      client.invalidateQueries(["get-todo"]);
+      client.invalidateQueries(["get-data"]);
     },
   });
 };

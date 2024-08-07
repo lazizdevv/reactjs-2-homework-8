@@ -1,1 +1,1 @@
-export * from "./edit-todo";
+export * from "./edit-product";

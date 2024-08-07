@@ -1,15 +1,17 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home";
-import { CreateTodo } from "./pages/create-page/create-todo";
-import { EditTodo } from "./pages/edit-page/edit-todo";
+import { CreateProduct } from "./pages/create-page";
+import { EditProduct } from "./pages/edit-page";
+import { SinglePage } from "./pages/single-page";
 
 function App() {
   return (
     <>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/create-todo" element={<CreateTodo />} />
-        <Route path="/edit-todo/:id" element={<EditTodo />} />
+        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/edit-product/:id" element={<EditProduct />} />
+        <Route path="/single-product/:id" element={<SinglePage/>} />
       </Routes>
     </>
   );

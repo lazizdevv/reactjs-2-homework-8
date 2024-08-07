@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import { request } from "../../../../config/request";
 
-export const useGetTodos = () => {
+export const useGetProduct = () => {
   return useQuery({
-    queryKey: ["get-todo"],
+    queryKey: ["get-data"],
     queryFn: () => request.get("/todos").then((res) => res.data),
   });
 };
