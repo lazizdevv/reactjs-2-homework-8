@@ -11,7 +11,7 @@ export const Home = () => {
   return (
     <>
       <div className="container border-2">
-        <div className="flex justify-center fixed bg-white w-full z-20 py-3 top-0 border-b-2 border-b-blue-500 shadow-lg">
+        <div className="flex justify-center fixed bg-white w-full z-20 py-3 top-0 left-0 border-b-2 border-b-blue-500 shadow-lg">
           <button
             onClick={() => navigate("/create-product")}
             className="py-3 px-20 bg-blue-500 hover:bg-blue-700 rounded-lg font-bold text-white"
